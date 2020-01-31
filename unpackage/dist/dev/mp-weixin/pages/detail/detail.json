@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "电影·豆瓣",
+  "navigationBarBackgroundColor": "#7F766D",
+  "usingComponents": {
+    "introduction": "/common/introduction",
+    "scores": "/common/scores",
+    "top": "/common/top",
+    "category-scroll": "/common/cartegory-scroll",
+    "abstract": "/common/abstract",
+    "cast": "/common/cast",
+    "photo": "/common/photo"
+  }
+}

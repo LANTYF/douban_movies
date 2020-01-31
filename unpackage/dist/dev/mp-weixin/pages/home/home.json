@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "电影·豆瓣",
+  "usingComponents": {
+    "l_swipper": "/components/l_swipper/l_swiper",
+    "list": "/common/list"
+  }
+}

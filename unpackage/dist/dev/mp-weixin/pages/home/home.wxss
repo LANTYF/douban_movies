@@ -1,0 +1,8 @@
+
+.home {
+	background-color: #1d344e;
+}
+.swiper_image {
+	width: 100%;
+}
+

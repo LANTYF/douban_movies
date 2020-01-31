@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/more/more"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "电影·豆瓣",
+    "navigationBarBackgroundColor": "#1D344E",
+    "backgroundColor": "#1D344E"
+  },
+  "permission": {},
+  "usingComponents": {}
+}

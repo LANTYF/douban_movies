@@ -1,0 +1,1 @@
+<block wx:if="{{image}}"><scroll-view class="container"><image class="banner_image" src="{{image}}" mode></image><text data-event-opts="{{[['tap',[['enter',['$event']]]]]}}" class="btn" bindtap="__e">点击体验</text></scroll-view></block>

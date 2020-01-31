@@ -1,0 +1,12 @@
+
+.sup {
+	vertical-align: text-top;
+	font-size: 20rpx;
+}
+.cmd {
+	width: 300rpx;
+}
+uni-rate {
+	display: block;
+}
+

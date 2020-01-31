@@ -1,0 +1,107 @@
+@import './variables';
+
+//文字水平排列
+@each $var in (left, right, center) {
+  .text-#{$var} {
+    text-align: $var !important;
+  };
+};
+
+//字体颜色和背景颜色
+@each $colorKey, $color in $colors {
+  .text-#{$colorKey} {
+    color: $color
+  }
+  .bg-#{$colorKey} {
+    background-color: $color;
+  }
+}
+
+//字体大小
+@each $sizeKey, $size in $sizes {
+  .fs-#{$sizeKey} {
+    font-size: $size * $base-font-size;
+  }
+}
+
+//flex布局
+@each $key, $value in $flex-jc {
+  .jc-#{$key} {
+    justify-content: $value
+  }
+}
+
+@each $key, $value in $flex-ai {
+  .ai-#{$key} {
+    align-items: $value;
+  }
+}
+
+//边距
+@each $typeKey, $type in $spacing-types {
+  @each $key, $value in $spacing-level {
+    .#{$typeKey}-#{$key} {
+      #{$type}: $value * $base-spacing-size
+    }
+    .#{$typeKey}x-#{$key} {
+      #{$type}-left: $value * $base-spacing-size;
+      #{$type}-right: $value * $base-spacing-size
+    }
+    .#{$typeKey}y-#{$key} {
+      #{$type}-top: $value * $base-spacing-size;
+      #{$type}-bottom: $value * $base-spacing-size
+    }
+  }
+  @each $directionKey, $directionValue in $spacing-direction {
+    @each $key, $value in $spacing-level {
+      .#{$typeKey}#{$directionKey}-#{$key} {
+        #{$type}-#{$directionValue}: $value * $base-spacing-size
+      }
+    }
+  }
+}
+
+//reset
+html {
+  font-size:13px;
+  background-color: #ededed;
+  width: 100vw
+}
+
+//height, width
+.w-100 {
+  width: 100%
+}
+.h-100 {
+  height: 100%
+}
+
+//border
+.bd-1 {
+  border: 1px solid #d4d9de
+}
+
+//flex
+.d-flex {
+  display: flex;
+};
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex:1
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+//text overflow
+.text-ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
